@@ -1,0 +1,27 @@
+<p>register works!</p>
+
+<form (ngSubmit)="Insert()">
+    <legend>Add Employee</legend>
+
+    <div class="form-group">
+        <label for="">No</label>
+        <input type="text" class="form-control" id="No" name="No" placeholder="No" [(ngModel)]="emp.No">
+    </div>
+
+
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" placeholder="Name" [(ngModel)]="emp.Name">
+    </div>
+
+
+    <div class="form-group">
+        <label for="">Age</label>
+        <input type="text" class="form-control" id="Age" name="Age" placeholder="Age" [(ngModel)]="emp.Age">
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary">Add Employee</button>
+</form>
+
